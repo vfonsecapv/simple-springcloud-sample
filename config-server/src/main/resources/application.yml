@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:/Users/victorfonseca/git/config-repo
+          repos:
+            local:
+              pattern: local*
+              uri: file:/Users/victorfonseca/git/config-repo
+server:
+ port: 9000
+management:
+ context-path: /admin
