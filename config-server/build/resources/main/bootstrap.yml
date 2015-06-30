@@ -1,7 +1,0 @@
-spring:
- application:
-  name: config-server
- config:
-  enable: false
-  server:
-   bootstrap: true
