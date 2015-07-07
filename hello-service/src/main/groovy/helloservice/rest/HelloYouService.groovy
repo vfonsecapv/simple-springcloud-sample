@@ -1,27 +1,27 @@
 package helloservice.rest
 
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
+import org.springframework.cloud.client.ServiceInstance
+import org.springframework.cloud.client.discovery.DiscoveryClient
+import org.springframework.cloud.context.config.annotation.RefreshScope
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand
-import org.springframework.cloud.client.discovery.DiscoveryClient
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.cloud.client.ServiceInstance
 
+@RefreshScope
 @RestController
 @RequestMapping("/helloyou")
 class HelloYouService {
 	@Autowired
 	DiscoveryClient client
 
-	@HystrixCommand(fallbackMethod = "defaultHello")
-	@RequestMapping("/hi")
-    def hi() {
+    @Value('${message}')
+    def message
+
+	@RequestMapping(name = "/hi",  produces = "application/json;charset=utf-8")
+    String hi() {
     	ServiceInstance localInstance = client.getLocalServiceInstance()
 
-    	"Hello for you! INS: " + localInstance.getServiceId()+":"+localInstance.getHost()+":"+localInstance.getPort()
-    }
-
-    def defaultHello() {
-        "No hello for you!"
+    	"Hello for you! INS: " + message + " : " +localInstance.getServiceId()+":"+localInstance.getHost()+":"+localInstance.getPort()
     }
 }

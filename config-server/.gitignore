@@ -5,7 +5,7 @@
 .settings/
 .gradle/*
 .idea
-.iml
+*.iml
 .rdb
 **/.DS_Store
 /build/
