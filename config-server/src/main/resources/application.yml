@@ -3,12 +3,12 @@ spring:
     config:
       server:
         git:
-          uri: file:/Users/victorfonseca/git/config-repo
+          uri: https://github.com/vfonsecapv/config
           repos:
             local:
               pattern: local*
-              uri: file:/Users/victorfonseca/git/config-repo
+              uri: https://github.com/vfonsecapv/config
 server:
  port: 9000
 management:
- context-path: /admin
+ context-path: /adm
