@@ -3,4 +3,4 @@ spring:
   name: hello-service
  cloud:
   config:
-   uri: http://localhost:${config.port:9000}
+   uri: http://spring-cloud-broker.south.fe.pivotal.io/dashboard/p-config-server/1f185bb5-fa4c-4580-b61d-6ee44ee46436
