@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController
 
 @RefreshScope
 @RestController
-@RequestMapping("/helloyou")
 class HelloYouService {
 	@Autowired
 	DiscoveryClient client
@@ -18,7 +17,7 @@ class HelloYouService {
     @Value('${message}')
     def message
 
-	@RequestMapping(name = "/hi",  produces = "application/json;charset=utf-8")
+	@RequestMapping(name = "/",  produces = "application/json;charset=utf-8")
     String hi() {
     	ServiceInstance localInstance = client.getLocalServiceInstance()
 
