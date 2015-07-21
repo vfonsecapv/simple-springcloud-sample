@@ -10,6 +10,6 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient
 @RibbonClient(name = "hello-service", configuration = HelloYourProducer.class)
 class HelloYouApplication {
     static void main(String[] args) {
-        SpringApplication.run(HelloYouApplication.class, args)
+        SpringApplication.run HelloYouApplication.class, args
     }
 }

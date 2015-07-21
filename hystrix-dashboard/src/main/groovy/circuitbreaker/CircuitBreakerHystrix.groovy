@@ -16,6 +16,6 @@ class CircuitBreakerHystrix {
 	}
 
     public static void main(String[] args) {
-        SpringApplication.run(CircuitBreakerHystrix.class, args)
+        SpringApplication.run CircuitBreakerHystrix.class, args
     }
 }

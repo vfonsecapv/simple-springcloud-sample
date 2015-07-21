@@ -15,6 +15,6 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy
 class HelloService {
 
     static void main(String[] args) {
-        SpringApplication.run(HelloService.class, args)
+        SpringApplication.run HelloService.class, args
     }
 }
