@@ -8,10 +8,10 @@ spring:
   config:
     server:
       git:
-        uri: file:/Users/victorfonseca/git/config-repo
+        uri: https://github.com/vfonsecapv/config.git
         repos:
           local:
             pattern: local*
-            uri: file:/Users/victorfonseca/git/config-repo
+            uri: https://github.com/vfonsecapv/config.git
 server:
  port: 9000

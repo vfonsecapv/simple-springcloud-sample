@@ -31,6 +31,9 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-config-client")
     compile("org.springframework.cloud:spring-cloud-starter-bus-amqp")
     compile("org.springframework.cloud:spring-cloud-starter-eureka-server")
+
+    compile("org.springframework.cloud:spring-cloud-spring-service-connector")
+    compile("org.springframework.cloud:spring-cloud-cloudfoundry-connector")
     
     compile("org.codehaus.groovy:groovy")
 

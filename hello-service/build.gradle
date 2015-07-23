@@ -39,6 +39,9 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-zuul")
     compile("org.springframework.cloud:spring-cloud-starter-bus-amqp")
 
+    compile("org.springframework.cloud:spring-cloud-spring-service-connector")
+    compile("org.springframework.cloud:spring-cloud-cloudfoundry-connector")
+
     compile("com.jayway.jsonpath:json-path")
     compile("org.codehaus.groovy:groovy")
     testCompile("org.springframework.boot:spring-boot-starter-test")
