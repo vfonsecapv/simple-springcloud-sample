@@ -35,6 +35,7 @@ repositories {
 dependencies {
     //SPRING CLOUD
     compile("org.springframework.cloud:spring-cloud-config-client")
+    compile("org.springframework.cloud:spring-cloud-starter-bus-amqp")
     compile("org.springframework.cloud:spring-cloud-starter-eureka")
     
     compile("com.jayway.jsonpath:json-path")

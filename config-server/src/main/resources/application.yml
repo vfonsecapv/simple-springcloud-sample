@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       server:
@@ -10,5 +15,3 @@ spring:
               uri: file:/Users/victorfonseca/git/config-repo
 server:
  port: 9000
-management:
- context-path: /adm
