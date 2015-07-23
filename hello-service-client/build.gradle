@@ -14,8 +14,6 @@ buildscript {
 }
 
 apply plugin: 'groovy'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
 apply plugin: "spring-boot"
 apply plugin: "io.spring.dependency-management"
 
@@ -42,10 +40,6 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-zuul")
     compile("org.springframework.cloud:spring-cloud-starter-bus-amqp")
 
-    compile("io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry")
-    compile("io.pivotal.spring.cloud:spring-cloud-services-starter-config-client")
-    compile("io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker")
-    
     compile("com.jayway.jsonpath:json-path")
     compile("org.codehaus.groovy:groovy")
     testCompile("org.springframework.boot:spring-boot-starter-test") 
