@@ -5,13 +5,12 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.cloud.client.ServiceInstance
 import org.springframework.cloud.client.discovery.DiscoveryClient
 import org.springframework.cloud.context.config.annotation.RefreshScope
-import org.springframework.stereotype.Component
 import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RestController
 
 @RefreshScope
 @RestController
-@Component
 class HelloYouService {
 	@Autowired
 	DiscoveryClient client
@@ -19,7 +18,7 @@ class HelloYouService {
     @Value('${message}')
     def message
 
-	@RequestMapping(name = "/",  produces = "application/json;charset=utf-8")
+	@RequestMapping(name = "/", method = RequestMethod.GET,  produces = "application/json;charset=utf-8")
     String hi() {
     	ServiceInstance localInstance = client.getLocalServiceInstance()
 
