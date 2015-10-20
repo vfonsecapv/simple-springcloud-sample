@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RequestMethod
 
 @FeignClient("HELLO-SERVICE")
 interface HelloServiceRepository {
-    @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     String sayHello()
 }

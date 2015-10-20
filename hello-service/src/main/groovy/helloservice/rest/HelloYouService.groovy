@@ -18,7 +18,7 @@ class HelloYouService {
     @Value('${message}')
     def message
 
-	@RequestMapping(name = "/", method = RequestMethod.GET,  produces = "application/json;charset=utf-8")
+	@RequestMapping(name = "/", method = RequestMethod.GET)
     String hi() {
     	ServiceInstance localInstance = client.getLocalServiceInstance()
 

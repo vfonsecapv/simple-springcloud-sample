@@ -15,7 +15,6 @@ class HelloController {
     HelloServiceRepository say
 
     @HystrixCommand(fallbackMethod = "defaultHello")
-    @RequestMapping(produces = "application/json;charset=utf-8")
     String sayHello() {
         say.sayHello()
     }
