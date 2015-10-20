@@ -1,17 +1,10 @@
 spring:
- rabbitmq:
-   host: localhost
-   port: 5672
-   username: guest
-   password: guest
  cloud:
   config:
     server:
       git:
-        uri: file:/Users/victorfonseca/git/config-repo
+        uri: https://github.com/vfonsecapv/config
         repos:
           local:
             pattern: local*
-            uri: file:/Users/victorfonseca/git/config-repo
-server:
- port: 9000
+            uri: https://github.com/vfonsecapv/config

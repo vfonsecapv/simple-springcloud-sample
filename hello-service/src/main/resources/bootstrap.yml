@@ -1,11 +1,6 @@
 spring:
- rabbitmq:
-   host: localhost
-   port: 5672
-   username: guest
-   password: guest
  application:
   name: hello-service
  cloud:
   config:
-   uri: http://localhost:${config.port:9000}
+   uri: http://config-demo.cfapps.io
