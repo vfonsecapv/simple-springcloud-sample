@@ -7,4 +7,8 @@ spring:
         repos:
           local:
             pattern: local*
-            uri: https://github.com/vfonsecapv/config
+            uri: https://github.com/vfonsecapv/
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'

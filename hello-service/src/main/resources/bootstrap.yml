@@ -3,4 +3,4 @@ spring:
   name: hello-service
  cloud:
   config:
-   uri: http://config-demo.cfapps.io
+   uri: ${vcap.services.config-service.credentials.uri}
