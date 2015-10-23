@@ -22,6 +22,6 @@ class HelloYouService {
     String hi() {
     	ServiceInstance localInstance = client.getLocalServiceInstance()
 
-    	message + " : " +localInstance.getServiceId()+":"+localInstance.getHost()+":"+localInstance.getPort()
+    	message + " : " + localInstance.getServiceId() + " : " + localInstance.getPort()
     }
 }

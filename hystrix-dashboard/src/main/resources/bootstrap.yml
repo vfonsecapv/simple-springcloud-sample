@@ -1,11 +1,6 @@
 spring:
- rabbitmq:
-   host: localhost
-   port: 5672
-   username: guest
-   password: guest
  application:
   name: hystrix-dashboard
  cloud:
   config:
-   uri: http://localhost:${config.port:9000}
+   uri: ${vcap.services.config-service.credentials.uri}
