@@ -38,11 +38,7 @@ repositories {
 dependencies {
     compile("org.springframework.cloud:spring-cloud-config-client")
     compile("org.springframework.cloud:spring-cloud-starter-eureka")
-    compile("org.springframework.cloud:spring-cloud-starter-ribbon")
     compile("org.springframework.cloud:spring-cloud-starter-hystrix")
-    compile("org.springframework.cloud:spring-cloud-starter-feign")
-    compile("org.springframework.cloud:spring-cloud-starter-zuul")
-    compile("org.springframework.cloud:spring-cloud-starter-bus-amqp")
     compile("org.springframework.cloud:spring-cloud-starter")
 
     compile("com.jayway.jsonpath:json-path")
