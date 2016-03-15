@@ -1,6 +1,3 @@
 spring:
  application:
   name: hello-service-client
- cloud:
-  config:
-   uri: ${vcap.services.config-service.credentials.uri}
