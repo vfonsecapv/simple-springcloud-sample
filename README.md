@@ -1,8 +1,4 @@
-ifdef::basebackend-docbook[]
-[preface]
-== Simple Spring Cloud Sample
-endif::basebackend-docbook[]
-
+Simple Spring Cloud Sample
 
 @Pivotal
 
@@ -12,9 +8,7 @@ https://github.com/vfonsecapv/config
 
 Open source example for Spring Cloud (http://projects.spring.io/spring-cloud/)  - Angel SR6
 
-ifdef::basebackend-docbook[]
-[How to use]
-endif::basebackend-docbook[]
+How to use
 
 * You can use BOSH-LITE, but need to deploy some services:
 
