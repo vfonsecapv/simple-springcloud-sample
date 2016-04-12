@@ -10,7 +10,7 @@ Open source example for Spring Cloud (http://projects.spring.io/spring-cloud/)  
 
 How to use
 
-* You can use BOSH-LITE, but need to deploy some services:
+* You can use BOSH-LITE (https://github.com/cloudfoundry/bosh-lite and https://github.com/cloudfoundry-incubator/diego-release), but need to deploy some services:
 
 	* You need RabbitMQ service. (https://github.com/pivotal-cf/cf-rabbitmq-release)
 
