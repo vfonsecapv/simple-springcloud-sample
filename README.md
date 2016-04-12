@@ -1,4 +1,4 @@
-= Simple Spring Cloud Sample
+[Simple Spring Cloud Sample]
 
 @Pivotal
 
@@ -8,7 +8,7 @@ https://github.com/vfonsecapv/config
 
 Open source example for Spring Cloud (http://projects.spring.io/spring-cloud/)  - Angel SR6
 
-== How to use
+[How to use]
 
 * You can use BOSH-LITE, but need to deploy some services:
 
