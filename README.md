@@ -24,5 +24,5 @@ Endpoints:
 
  * http://hello-service.bosh-lite.com/hello
  * http://hello-service-client.bosh-lite.com/hello
- * http://hystrix-dashboard.bosh-lite.com
+ * http://hystrix-dashboard.bosh-lite.com/hystrix
  * http://eureka-server.bosh-lite.com
