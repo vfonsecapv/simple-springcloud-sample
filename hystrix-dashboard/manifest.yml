@@ -1,0 +1,11 @@
+---
+applications:
+- name: hello-service-client
+  memory: 300M
+  disk_quota: 300M
+  instances: 1
+  random-route: true
+  path: build/libs/hystrix-dashboard-0.0.1-SNAPSHOT.jar
+  services:
+    - config-service
+    - eureka-service

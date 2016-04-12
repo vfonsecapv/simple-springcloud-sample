@@ -1,0 +1,5 @@
+# Open all connections for Security Group
+[
+{"protocol":"all","destination":"0.0.0.0"},
+{"protocol":"all","destination":"0.0.0.0"}
+]
