@@ -2,11 +2,11 @@ Simple Spring Cloud Sample
 
 @Pivotal
 
-Using config repo, for config server apps .yml:
+Using config repo (http://cloud.spring.io/spring-cloud-config/), for config server apps .yml:
 
 https://github.com/vfonsecapv/config
 
-Open source example for Spring Cloud (http://projects.spring.io/spring-cloud/)  - Angel SR6
+Open source example for Spring Cloud (Netflix) (http://projects.spring.io/spring-cloud/) - Angel SR6 and (http://cloud.spring.io/spring-cloud-netflix/) 1.0.7
 
 How to use
 
@@ -19,3 +19,10 @@ How to use
 		* cf cups config-service -p '{"uri":"http://config-server.bosh-lite.com"}'
 
 		* cf cups eureka-service -p '{"uri":"eureka-server.bosh-lite.com"}'
+
+Endpoints:
+
+ * http://hello-service.bosh-lite.com/hello
+ * http://hello-service-client.bosh-lite.com/hello
+ * http://hystrix-dashboard.bosh-lite.com
+ * http://eureka-server.bosh-lite.com
