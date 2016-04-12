@@ -16,6 +16,6 @@ How to use
 
 	* You need to create some CUPS:
 
-		* cf cups config-service -p '{"uri":"http://config-server-url.host.com"}'
+		* cf cups config-service -p '{"uri":"http://config-server.bosh-lite.com"}'
 
-		* cf cups eureka-service -p '{"uri":"eureka-server-url-no-http.host.com"}'
+		* cf cups eureka-service -p '{"uri":"eureka-server.bosh-lite.com"}'
