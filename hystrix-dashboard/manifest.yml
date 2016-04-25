@@ -1,10 +1,11 @@
 ---
 applications:
-- name: hello-service-client
+- name: hystrix-dashboard
   memory: 300M
   disk_quota: 300M
+  buildpack: java_buildpack
   instances: 1
-  random-route: true
+  random-route: false
   path: build/libs/hystrix-dashboard-0.0.1-SNAPSHOT.jar
   services:
     - config-service

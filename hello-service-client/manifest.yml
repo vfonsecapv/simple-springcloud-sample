@@ -3,8 +3,9 @@ applications:
 - name: hello-service-client
   memory: 380M
   disk_quota: 400M
+  buildpack: java_buildpack
   instances: 1
-  random-route: true
+  random-route: false
   path: build/libs/hello-service-client-0.0.1-SNAPSHOT.jar
   services:
     - config-service

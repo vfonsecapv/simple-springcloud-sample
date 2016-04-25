@@ -2,9 +2,10 @@
 applications:
 - name: eureka-server
   memory: 512M
+  buildpack: java_buildpack
   disk_quota: 512M
   instances: 1
-  random-route: true
+  random-route: false
   path: build/libs/eureka-server-0.0.1-SNAPSHOT.jar
   services:
     - config-service
