@@ -1,0 +1,1 @@
+include "config-server", "eureka-server", "hello-service", "hello-service-client", "hystrix-dashboard"
