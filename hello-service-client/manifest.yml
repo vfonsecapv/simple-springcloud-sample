@@ -1,7 +1,7 @@
 ---
 applications:
 - name: hello-service-client
-  memory: 380M
+  memory: 512M
   disk_quota: 400M
   buildpack: java_buildpack
   instances: 1
